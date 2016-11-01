@@ -56,9 +56,10 @@ when you contribute to my code, please follow these rules:
 * Suppress superfluous parentheses when calling methods, but keep them
   when calling "functions", i.e. when you use the return value in the
   same line.
-
+  ```ruby
     x = Math.sin(y)
     array.delete e
+  ```
 
 * Prefer {...} over do...end.  Multiline {...} is fine: having
   different statement endings (} for blocks, end for if/while/...)
@@ -71,8 +72,9 @@ when you contribute to my code, please follow these rules:
 * Avoid line continuation (\) where not required.
 
 * Using the return value of = is okay:
-
+  ```ruby
     if v = array.grep(/foo/) ...
+  ```
 
 * Use ||= freely.
 
@@ -94,7 +96,7 @@ when you contribute to my code, please follow these rules:
 * The length of an identifier determines its scope.  Use one-letter
   variables for short block/method parameters, according to this
   scheme:
-
+  ```
     a,b,c: any object
     d: directory names
     e: elements of an Enumerable
@@ -109,6 +111,7 @@ when you contribute to my code, please follow these rules:
     v: any value
     v: the value part of a hash entry
     x,y,z: numbers
+  ```
 
   And in general, the first letter of the class name if all objects
   are of that type.
